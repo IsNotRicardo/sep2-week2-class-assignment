@@ -7,9 +7,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
    <children>
+      <Label fx:id="madeByLabel" />
       <Label fx:id="languageLabel" />
       <ComboBox fx:id="languageComboBox" prefWidth="150.0" />
       <Label fx:id="distanceLabel">

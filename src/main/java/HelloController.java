@@ -22,6 +22,8 @@ public class HelloController {
     };
 
     @FXML
+    public Label madeByLabel;
+    @FXML
     public Label languageLabel;
     @FXML
     public ComboBox<String> languageComboBox;
@@ -61,6 +63,7 @@ public class HelloController {
     }
 
     private void loadText() {
+        madeByLabel.setText(MessageFormat.format(messages.getString("madeBy.label"), "Ricardo de Sousa"));
         languageLabel.setText(messages.getString("language.label"));
         distanceLabel.setText(messages.getString("distance.label"));
         fuelLabel.setText(messages.getString("fuel.label"));
